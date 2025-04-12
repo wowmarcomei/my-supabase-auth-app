@@ -2,6 +2,28 @@
 
 This is a [Next.js](https://nextjs.org/) project that demonstrates authentication using [Supabase](https://supabase.com/), including email/password, GitHub, and Google authentication methods.
 
+## Demo
+
+1. Home Page
+
+   ![](./media/01.png)
+
+2. Login Page
+
+   ![](./media/02.png)
+
+3. Login with Google
+
+   ![](./media/03.png)
+
+4. User Profile
+
+   ![](./media/04.png)
+
+5. Users in Supabase
+
+   ![](./media/05.png)
+
 ## Getting Started
 
 First, clone the repository and install the dependencies:

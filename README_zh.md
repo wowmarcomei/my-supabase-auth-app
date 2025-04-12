@@ -2,6 +2,28 @@
 
 这是一个使用 [Next.js](https://nextjs.org/) 和 [Supabase](https://supabase.com/) 实现的身份验证演示项目，包括电子邮件/密码、GitHub 和 Google 登录方式。
 
+## Demo效果
+
+1. Home页面
+
+   ![](./media/01.png)
+
+2. 登陆页面
+
+   ![](./media/02.png)
+
+3. Google登陆
+
+   ![](./media/03.png)
+
+4. 用户仪表板
+
+   ![](./media/04.png)
+
+5. Supabase注册Users信息
+
+   ![](./media/05.png)
+
 ## 开始使用
 
 首先，克隆仓库并安装依赖：
