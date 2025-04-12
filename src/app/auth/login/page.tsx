@@ -5,9 +5,25 @@ import { Auth } from '@supabase/auth-ui-react';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
 import { supabase } from '@/lib/supabase';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function Login() {
   const router = useRouter();
+
+  // 监听身份验证状态变化
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_IN' && session) {
+        // 登录成功后重定向到仪表板
+        router.push('/dashboard');
+      }
+    });
+
+    // 清理订阅
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [router]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
